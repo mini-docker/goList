@@ -1,0 +1,2 @@
+# goList
+Methods collection
