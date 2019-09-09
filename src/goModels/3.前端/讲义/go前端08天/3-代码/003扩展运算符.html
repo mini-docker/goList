@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let arr = [1,2,3];
+
+        // 下面这种方式不能复制数组
+        let arr2 = arr;
+        
+        // 用for循环复制数组
+        let arr3 = [];
+        for(var i=0;i<arr.length;i++){
+            arr3.push(arr[i]);
+        };
+        
+        // 通过扩展运算符复制数组
+        let arr4 = [...arr,5];
+
+        arr.push(4);
+        //alert(arr);
+        //alert(arr2);
+        //alert(arr3);
+        //alert(arr4);
+
+        function fnAdd(a,b,c){
+            alert( a + b + c );
+        };
+        fnAdd(...arr);
+        function fnConsole(...a){
+            console.log(a);
+        }
+        fnConsole(10,5,6);
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

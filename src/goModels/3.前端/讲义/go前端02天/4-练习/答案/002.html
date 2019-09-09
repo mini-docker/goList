@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .form_con{
+            width:400px;
+            height:460px;
+            background:#f2f2f2;
+            padding:20px;                     
+        }
+
+        .form_con label{
+            float:left;
+            width:80px;
+            text-align:right;
+        }
+
+        .form_con h3{
+            margin:0px;
+            border-bottom:1px solid #ddd;
+            line-height:50px;
+            font-size:22px;
+            font-weight:normal;  
+        }
+
+        .input_txt{
+            width:240px;
+            height:24px;
+        }
+        .input_txt2{
+            width:240px;
+            height:100px;
+        }
+
+        .input_select{
+            width:120px;
+            height:24px;
+        }
+
+        .ml80{
+            margin-left:80px
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="form_con">
+        <h3>注册表单</h3>
+        <form action="" method="get">        
+            <p>
+            <label>姓名：</label><input type="text" name="username" class="input_txt" />
+            </p>
+            <p>
+            <label>密码：</label><input type="password" name="password" class="input_txt" />
+            </p>
+            <p>
+            <label>性别：</label>
+            <input type="radio" name="gender" value="0" /> 男
+            <input type="radio" name="gender" value="1" /> 女
+            </p>
+            <p>
+            <label>爱好：</label>
+            <input type="checkbox" name="like" value="sing" /> 唱歌
+            <input type="checkbox" name="like" value="run" /> 跑步
+            <input type="checkbox" name="like" value="swiming" /> 游泳
+            </p>
+            <p>
+            <label>照片：</label>
+            <input type="file" name="person_pic">
+            </p>
+            <p>
+            <label>个人描述：</label>
+            <textarea name="about" class="input_txt2"></textarea>
+            </p>
+            <p>
+            <label>籍贯：</label>
+            <select name="site" class="input_select">
+                <option value="0">北京</option>
+                <option value="1">上海</option>
+                <option value="2">广州</option>
+                <option value="3">深圳</option>
+            </select>
+            </p>
+            <p>
+            <input type="submit" name="" value="提交" class="ml80">
+            <input type="reset" name="" value="重置">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 定义可以传参的函数
+        function fnAdd(iNum01,iNum02){
+            var iRs = iNum01 + iNum02;
+            //alert(iRs);
+        }
+
+        function fnAdd2(iNum01,iNum02){
+            var iRs = iNum01 + iNum02;
+            alert(iNum01);
+            return iRs; // return 在这一句返回值之后，就结束了函数的运行，它下面的语句不会执行
+            //return; 只写一个return，表示在这一句结束函数的运行，但是不返回值
+            alert(iNum02);
+        }
+        
+        // 调用传参的函数
+        // 函数没有返回值，得到的值是undefined
+        var iRs2 = fnAdd(10,5);
+
+        var iRs3 = fnAdd2(20,5);
+
+        //alert(iRs2);
+        alert(iRs3);
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let aList = [1,2,3];
+        let [a,b,c] = aList;
+        //alert(a);
+        //alert(b);
+
+        let person = {name:"tom",age:18};
+        let {name,age} = person;
+        alert(name);
+        alert(age);
+
+        function fnAlertPerson({name,age}){
+            alert(
+            `我的名字是：${name},
+            我的年龄是：${age}`
+            );
+        }
+        
+        fnAlertPerson(person);
+    
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

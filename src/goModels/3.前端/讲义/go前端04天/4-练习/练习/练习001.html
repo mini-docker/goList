@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        /* 
+
+         请使用数组的splice方法以及循环嵌套来实现数组去重，实现过程中不新建数组。
+
+         实现原理提示：用数组后面的成员和前面的成员进行对比，如果有相同的，就用splice方法删掉后面相同的成员，用两层循环嵌套实现后面的成员和前面成员比较。
+
+        */
+
+        var arr = [1,2,3,4,5,6,5,4,3,7,8,9,8,7,6,5,4,6,7];
+
+        // var iLen = arr.length; 这里存的长度值是固定的，循环中会删除数组成员，所以在这里不能使用这个存储的长度
+
+        //for...
+
+        for(var i=0;i<arr.length;i++){            
+            for(var j=0;j<i;j++){
+                if(arr[i]==arr[j]){
+                    arr.splice(i,1);
+                    i--;
+                }
+            }
+        }
+        
+        alert(arr); // 弹出：1,2,3,4,5,6,7,8,9
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

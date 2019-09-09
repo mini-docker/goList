@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        /* 定义标签选取器,标签选择器会影响所有同类型的标签，一般比较少用 */
+        div{color:red}
+
+
+        /* 定义类选择器，一个类可以用在多个标签上，一个标签可以用多个类，是使用最多的一种选择器 */
+        .blue{color:blue}
+        .big{font-size:30px}
+
+        /* 定义层级选择器 */
+        .blue span{color:purple;font-size:20px}
+    
+    </style>
+</head>
+<body>
+    <div>这是一个div</div>
+    <div>这是第二个div</div>
+
+    <p class="blue">这是一个p标签</p>
+    <p class="big blue">这是第二p标签</p>
+
+    <p class="blue">本人叫张山，毕业于某大学<span>计算机科学与技术专业</span>，今年23岁,
+        本人性格开朗、稳重、待人真诚、热情。有较强的组织能力和</p>
+
+    <span>外面的span</span>
+</body>
+</html>

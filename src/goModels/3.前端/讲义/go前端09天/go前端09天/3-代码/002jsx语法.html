@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .sty01{
+            font-size:30px;
+            color:red;
+        }
+    
+    </style>
+    <script src="js/react.development.js"></script>
+    <script src="js/react-dom.development.js"></script>   
+    <script src="js/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>    
+
+    <script type="text/babel">
+        let iNum01 = 10;
+        let sTr = 'abcdefgh123456';
+        let ok = false;
+        let url = 'http://www.baidu.com'
+    
+
+        function fnRev(s){
+            return s.split('').reverse().join('');
+        }
+
+        let el = (
+                 <div>
+                   <h2>jsx语法</h2>
+                   {/* jsx里面的注释 */}
+                   <p>{ iNum01+5 }</p>
+                   <p>{ sTr }</p>
+                   <p>{ sTr.split('').reverse().join('') }</p>
+                   <p>{ fnRev(sTr) }</p>
+                   <p>{ ok?'YES':'NO' }</p>
+                   <a href={url} className="sty01">这是一个链接</a>
+                </div>          
+            );
+
+        ReactDOM.render(el,document.getElementById('root') );
+    
+    </script>
+
+</body>
+</html>

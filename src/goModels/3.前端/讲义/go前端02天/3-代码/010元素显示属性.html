@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            /* 将块元素转化为内联元素 */
+            display:inline;
+        }
+
+        .link01{
+            /* 将内联元素转化为块元素 */
+            display:block;
+        }
+
+        .con{
+            width:200px;
+            height:200px;
+            background:gold;
+
+            /* 设置样式将元素隐藏起来 */
+            display:none;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="con" style="display:block"></div>
+    <div class="box">这是第一个div</div>
+    <div class="box">这是第二个div</div>
+    <a href="#" class="link01">这是第一个链接</a>
+    <a href="#" class="link01">这是第二个链接</a>
+</body>
+</html>

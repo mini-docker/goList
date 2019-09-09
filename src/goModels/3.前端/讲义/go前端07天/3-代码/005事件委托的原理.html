@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+       $(function(){
+           var $li = $('.list li');
+           var $ul = $('.list');
+
+           /*
+           $li.click(function(){
+               $(this).css({'background':'red'});
+           })
+           */
+
+          // 上面的写法性能不高，可以改写成下面事件委托的写法
+          $ul.delegate('li','click',function(){
+              $(this).css({'background':'red'});
+          });
+
+
+       })
+    
+    </script>
+</head>
+<body>
+    <ul class="list">
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+    </ul>
+</body>
+</html>

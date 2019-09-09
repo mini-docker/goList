@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var aList = ['a','b','c'];
+        // 第一个参数是数组成员值，第二个参数是成员的索引值
+        aList.map(function(item,i){
+            alert(item + ' | ' + i);
+        })
+        
+        // concat会返回一个新数组
+        var aList2 = aList.concat('d','f');
+        var aList3 = [1,2];
+
+        var aList4 = aList.concat(aList3);
+
+
+        console.log(aList2);
+        console.log(aList4);
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

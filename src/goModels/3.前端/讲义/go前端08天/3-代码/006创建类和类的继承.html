@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 定义一个类
+        class Person {
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+            showname(){
+                alert('我的名称是：'+ this.name)            
+            }
+            showage(){
+                alert('我的年龄是：'+ this.age)            
+            }
+        }
+
+        // 通过类来实例化一个对象
+        let Andy = new Person('刘德华',55);
+
+        // 调用对象上面的方法：
+        //Andy.showname();
+        //Andy.showage();
+
+
+        // 定义类继承Person
+        class Student extends Person{
+            constructor(name,age,school){
+                super(name,age);
+                this.school = school;
+            }
+            showschool(){
+                alert('我的学校是：' + this.school);
+            }
+        }
+        // 通过Student类来实例化对象
+        var Xiaoming = new Student('小明',15,'北京一中');
+
+        Xiaoming.showname();
+        Xiaoming.showage();
+        Xiaoming.showschool();
+    
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

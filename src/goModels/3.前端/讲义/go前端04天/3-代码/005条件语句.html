@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var iNum01 = 12;
+        var sNum01 = '12';
+
+        /*if(iNum01==12){
+            alert('相等！')
+        }
+        else{
+            alert('不相等！');
+        }*/
+
+        // "==" 默认会将符号两边的变量转换成数字在进行对比，这个叫做隐式转换
+        if(sNum01==12){
+            alert('相等！')
+        }
+        else{
+            alert('不相等！');
+        }
+        
+        // "===" 不会转换符号两边的变量类型
+        if(sNum01===12){
+            alert('相等！')
+        }
+        else{
+            alert('不相等！');
+        }
+        
+        var iNow = 5;
+
+        if(iNow==0){
+            alert('休息');
+        }
+        else if(iNow==1){
+            alert('学习')
+        }
+        else if(iNow==2){
+            alert('学习')
+        }
+        else if(iNow==3){
+            alert('休息')
+        }
+        else{
+            alert('自习')
+        }
+
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
